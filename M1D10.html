@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M1D10</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <style>
+        body {
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 500px
+        }
+        h1{
+            text-align: center;
+        }
+        a{
+            color: blueviolet;
+        }
+        table{
+            border: solid 1px  black;
+            border-radius: 30px;
+        }
+        .border{
+            background: rgb(115, 141, 153);
+            
+            
+        }
+        img{
+            border-radius: 30px;
+        }
+        p{
+            margin: 25px 30px 25px 30px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .hide {
+            display: none;
+        }
+        td{
+            border: solid 1px green;
+            border-top: 1px dotted red;
+            border-bottom: 1px dotted red;
+        }
+
+        
+            
+        
+
+    </style>
+
+
+    <h1>This is heading</h1>
+
+    <ol>
+        <li>this</li>
+        <li>is</li>
+        <li>a</li>
+        <li>list</li>
+    </ol>
+    <table class="border table ">
+        <tr class="row">
+            <td class="col">1</td>
+            <td class="col"><a href="https://picsum.photos/200/200"><img src="https://picsum.photos/200/200" alt="">cell</a></td>
+            <td class="col">3</td>
+            <td class="col">4</td>
+            <td class="col">5</td>
+        </tr>
+        <tr class="row">
+            <td class="col">1</td>
+            <td class="col"><a href="https://picsum.photos/200/200"><img src="https://picsum.photos/200/200" alt="">cell</a></td>
+            <td class="col">3</td>
+            <td class="col">4</td>
+            <td class="col">5</td>
+        </tr>
+        <tr class="row">
+            <td rowspan="2" class="col">1</td>
+            <td class="col"><a href="https://picsum.photos/200/200"><img src="https://picsum.photos/200/200" alt="">cell</a></td>
+            <td class="col">3</td>
+            <td class="col">4</td>
+            <td class="col">5</td>
+        </tr>
+        <tr class="row">
+            <td class="col">1</td>
+            <td class="col"><a href="https://picsum.photos/200/200"><img src="https://picsum.photos/200/200" alt="">cell</a></td>
+            <td class="col">3</td>
+            <td class="col">4</td>
+            <td class="col">5</td>
+        </tr>
+        
+    </table>
+    <hr>
+
+    <div class="container">
+        <p class="bold"> this is P</p>
+        <p>this is second p</p>
+        <ul id="myTaskList">
+            <li>this</li>
+            <li>is</li>
+            <li>list</li>
+        </ul>
+    </div>
+    <footer>hello,this is footer about me</footer>
+
+
+    
+
+        <!--
+
+        HTML EXERCISES
+
+        1) Create a title for the page /k
+        2) Create a heading /k
+        3) Create an ordered list /k
+        4) Create a table with 5 columns and 4 rows /k
+        5) Add an image to each second cell of every row /k
+        6) Add a anchor link for every image /k
+        7) Merge together 2 table cells /k
+        8) Divide the page using a horizontal line /k
+        9) Create a container with a nested paragraph and a nested unordered list /k
+        10) Create a footer with some information about the page creator /k
+
+        CSS EXERCISES
+
+        11) Give a maximum width to the body and center it in the page /k
+        12) Set every h1 to be centered /k
+        13) Change the color of each link in the page /k
+        14) Create a class with a border  /k
+        15) Set table to have rounded corners /k
+        16) Add margin between every paragraph  /k
+        17) Create a class which change font size and boldness /k
+        18) Create a class to hide a content /k
+        19) Add a green border to each td /k
+        20) Add a dotted red border to each tr (note: tr does not accept a border property ;-) ) /k ? -->
+<script>
+
+            // JS EXERCISES
+            
+            // 21) Given variable x = "John" and y = "Doe", write on the console log "John <> Doe"
+
+            // let x = "John"
+            // let y = "Doe"
+            // console.log(x+"<>"+y)
+
+            // 22) Create an object with properties such name, surname, email
+
+            let memory = { 
+                name:"Person",
+                surname:"One",
+                email:"personOne@human.com",
+            }
+            console.log(memory)
+
+            // 23) Delete Email from the previously created object
+
+            delete memory.email;
+            console.log(memory)
+
+            // 24) Create an array with 10 strings in it
+            const arr =["this","is","a","string","list","that","contains","ten","strings","inside"]
+
+            // 25) Print in the console every string in the previous array
+            console.log(arr)
+            // 26) Create an array with 100 random numbers in it / k
+            
+
+            
+            const arrayLength = 100
+            const randomArray = []
+            for(let i = 0; i<arrayLength; i++) {randomArray.push(Math.floor(Math.random()*100+1))}
+            console.log(randomArray)
+
+
+            // 27) Wrote a function to get the MAX and the MIN from the previously created array
+
+            let maxNumber= Math.max(...randomArray) 
+            console.log(maxNumber)
+            let minNumber = Math.min(...randomArray)
+            console.log(minNumber)
+
+            // 28) Create an array of arrays, in which every array has 10 random numbers
+
+            // no idea and time atm
+
+            // 29) Create a function that gets 2 arrays and returns the longest one
+
+             // no idea and time atm
+
+            // 30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
+            
+             // no idea and time atm
+
+
+        //     DOM 
+
+        // 31) Get element with ID "container" from the page
+
+        document.getElementById("container")
+
+        // 32) Get every "td" from the page
+
+        document.querySelectorAll("td")
+
+        // 33) Create a cycle that prints the text inside every td of the page
+        
+        
+        
+
+        // 34) Write a function to change the heading of the page
+
+        let changeH = function(){
+            document.querySelector("h1").innerHTML = "changed"
+        }
+        changeH()
+        // 35) Write a function to add an extra row to the table
+
+        const extraRow = function addExtraRow() {
+                
+                let table = document.createElement("table"),
+                    tr,
+                    td,
+                    i;
+                
+                for (i = 0; i < 3; i++) {
+                    
+                    if (i % 15 == 0) {
+                        
+                        tr = table.appendChild(document.createElement("tr"));
+                    }
+                    
+                    td = tr.appendChild(document.createElement("td"));
+
+                    td.innerHTML = i + 1;
+                    
+                    td.className = "borderNumbersCell";
+                  }
+                    
+                    document.querySelector("#board").appendChild(table);
+
+                    
+                };
+
+        // 36) Write a function to add the class "test" to each row in the table
+
+        // const addClassToTitle = function () {
+        // const title = document.querySelectorAll("td");
+        // title.forEach.innerHTML
+        // // title.classList.add("test");
+        //  };
+        // addClassToTitle();
+
+                 // no idea and time atm
+
+
+
+        // 37) Write a function to add a red background to every link in the page
+
+        const changeUrls = function () {
+        const links = document.querySelectorAll("a");
+        links.forEach((link) => {
+          link.style= "background-color: red;";
+        });
+      };
+      changeUrls();
+
+        // 38) Console log "Page loaded" when the page is correctly loaded
+                // window.onload = function(){
+                //     alert("page loaded")
+                // }
+        // 39) Write a function to add new items to a UL
+        
+        const list = document.getElementById("myTaskList")
+
+        
+          let  addNewTask = function() {
+            const newTask = document.getElementById("newTask")
+    
+            const newLi = document.createElement("li")
+    
+            newLi.innerHTML = "hello"
+    
+            list.appendChild(newLi)
+   
+        }
+
+
+
+
+        // 40) Write a function to empty a list
+        function removeLast() {
+        list.children[list.children.length - 1].remove()
+    }
+        
+        // EXTRA 
+
+        // 41) Add an eventListener to alert when the mouse is over a link, displaying the URL
+        // 42) Add a button to hide every image on the page
+        // 43) Add a button to hide and show the table from the page
+        // 44) Write a function to sum every number inside the TD (if the content is numeric)
+        // 45) Delete the last letter from the title each time the user clicks on it
+        // 46) Change a single TD background color when the user clicks on it
+        // 47) Add a button DELETE, on click it should delete a random TD from the page
+        // 48) Add a pink border to a cell when the mouse is over it
+        // 49) Write a function to add a table with 4 rows and 3 columns programmatically
+        // 50) Write a function to remove the table from the page
+        //
+        
+
+        </script>
+        
+
+
+    
+</body>
+</html>
